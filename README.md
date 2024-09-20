@@ -1,4 +1,7 @@
-# DTW internal components
+# PyCollections
+
+[![Static Badge](https://img.shields.io/badge/dwt/PyCollections-green)](https://github.com/jiangzihan/pycollections)
+[![Static Badge](https://img.shields.io/badge/status-dev-blue)](https://github.com/jiangzihan/pycollections)
 
 1. [ready] Manual control oetl config for python project
 2. [pedding] Distributed Lock for redis
@@ -7,11 +10,16 @@
 ## pip
 
 ```sh
-poetry add pycollections
+# poetry add pycollections
+[tool.poetry.dependencies]
+pycollections = { git = "https://github.com/jiangzihan/pycollections.git", branch = "dev" }
+
+poetry lock
+poetry install
 
 # or
 
-pip install pycollections
+pip install git+https://github.com/jiangzihan/pycollections.git
 ```
 
 ## opentelemetry lib
